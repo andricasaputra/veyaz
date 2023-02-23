@@ -14,6 +14,7 @@ return [
     */
 
     'accepted' => 'The :attribute must be accepted.',
+<<<<<<< HEAD
     'accepted_if' => 'The :attribute must be accepted when :other is :value.',
     'active_url' => 'The :attribute is not a valid URL.',
     'after' => 'The :attribute must be a date after :date.',
@@ -21,6 +22,14 @@ return [
     'alpha' => 'The :attribute must only contain letters.',
     'alpha_dash' => 'The :attribute must only contain letters, numbers, dashes and underscores.',
     'alpha_num' => 'The :attribute must only contain letters and numbers.',
+=======
+    'active_url' => 'The :attribute is not a valid URL.',
+    'after' => 'The :attribute must be a date after :date.',
+    'after_or_equal' => 'The :attribute must be a date after or equal to :date.',
+    'alpha' => 'The :attribute may only contain letters.',
+    'alpha_dash' => 'The :attribute may only contain letters, numbers, dashes and underscores.',
+    'alpha_num' => 'The :attribute may only contain letters and numbers.',
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
     'array' => 'The :attribute must be an array.',
     'before' => 'The :attribute must be a date before :date.',
     'before_or_equal' => 'The :attribute must be a date before or equal to :date.',
@@ -32,12 +41,18 @@ return [
     ],
     'boolean' => 'The :attribute field must be true or false.',
     'confirmed' => 'The :attribute confirmation does not match.',
+<<<<<<< HEAD
     'current_password' => 'The password is incorrect.',
     'date' => 'The :attribute is not a valid date.',
     'date_equals' => 'The :attribute must be a date equal to :date.',
     'date_format' => 'The :attribute does not match the format :format.',
     'declined' => 'The :attribute must be declined.',
     'declined_if' => 'The :attribute must be declined when :other is :value.',
+=======
+    'date' => 'The :attribute is not a valid date.',
+    'date_equals' => 'The :attribute must be a date equal to :date.',
+    'date_format' => 'The :attribute does not match the format :format.',
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
     'different' => 'The :attribute and :other must be different.',
     'digits' => 'The :attribute must be :digits digits.',
     'digits_between' => 'The :attribute must be between :min and :max digits.',
@@ -45,7 +60,10 @@ return [
     'distinct' => 'The :attribute field has a duplicate value.',
     'email' => 'The :attribute must be a valid email address.',
     'ends_with' => 'The :attribute must end with one of the following: :values.',
+<<<<<<< HEAD
     'enum' => 'The selected :attribute is invalid.',
+=======
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
     'exists' => 'The selected :attribute is invalid.',
     'file' => 'The :attribute must be a file.',
     'filled' => 'The :attribute field must have a value.',
@@ -56,9 +74,15 @@ return [
         'array' => 'The :attribute must have more than :value items.',
     ],
     'gte' => [
+<<<<<<< HEAD
         'numeric' => 'The :attribute must be greater than or equal to :value.',
         'file' => 'The :attribute must be greater than or equal to :value kilobytes.',
         'string' => 'The :attribute must be greater than or equal to :value characters.',
+=======
+        'numeric' => 'The :attribute must be greater than or equal :value.',
+        'file' => 'The :attribute must be greater than or equal :value kilobytes.',
+        'string' => 'The :attribute must be greater than or equal :value characters.',
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
         'array' => 'The :attribute must have :value items or more.',
     ],
     'image' => 'The :attribute must be an image.',
@@ -76,6 +100,7 @@ return [
         'array' => 'The :attribute must have less than :value items.',
     ],
     'lte' => [
+<<<<<<< HEAD
         'numeric' => 'The :attribute must be less than or equal to :value.',
         'file' => 'The :attribute must be less than or equal to :value kilobytes.',
         'string' => 'The :attribute must be less than or equal to :value characters.',
@@ -87,6 +112,18 @@ return [
         'file' => 'The :attribute must not be greater than :max kilobytes.',
         'string' => 'The :attribute must not be greater than :max characters.',
         'array' => 'The :attribute must not have more than :max items.',
+=======
+        'numeric' => 'The :attribute must be less than or equal :value.',
+        'file' => 'The :attribute must be less than or equal :value kilobytes.',
+        'string' => 'The :attribute must be less than or equal :value characters.',
+        'array' => 'The :attribute must not have more than :value items.',
+    ],
+    'max' => [
+        'numeric' => 'The :attribute may not be greater than :max.',
+        'file' => 'The :attribute may not be greater than :max kilobytes.',
+        'string' => 'The :attribute may not be greater than :max characters.',
+        'array' => 'The :attribute may not have more than :max items.',
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
     ],
     'mimes' => 'The :attribute must be a file of type: :values.',
     'mimetypes' => 'The :attribute must be a file of type: :values.',
@@ -96,12 +133,17 @@ return [
         'string' => 'The :attribute must be at least :min characters.',
         'array' => 'The :attribute must have at least :min items.',
     ],
+<<<<<<< HEAD
     'multiple_of' => 'The :attribute must be a multiple of :value.',
+=======
+    'multiple_of' => 'The :attribute must be a multiple of :value',
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
     'not_in' => 'The selected :attribute is invalid.',
     'not_regex' => 'The :attribute format is invalid.',
     'numeric' => 'The :attribute must be a number.',
     'password' => 'The password is incorrect.',
     'present' => 'The :attribute field must be present.',
+<<<<<<< HEAD
     'prohibited' => 'The :attribute field is prohibited.',
     'prohibited_if' => 'The :attribute field is prohibited when :other is :value.',
     'prohibited_unless' => 'The :attribute field is prohibited unless :other is in :values.',
@@ -109,6 +151,10 @@ return [
     'regex' => 'The :attribute format is invalid.',
     'required' => 'The :attribute field is required.',
     'required_array_keys' => 'The :attribute field must contain entries for: :values.',
+=======
+    'regex' => 'The :attribute format is invalid.',
+    'required' => 'The :attribute field is required.',
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
     'required_with' => 'The :attribute field is required when :values is present.',
@@ -124,10 +170,17 @@ return [
     ],
     'starts_with' => 'The :attribute must start with one of the following: :values.',
     'string' => 'The :attribute must be a string.',
+<<<<<<< HEAD
     'timezone' => 'The :attribute must be a valid timezone.',
     'unique' => 'The :attribute has already been taken.',
     'uploaded' => 'The :attribute failed to upload.',
     'url' => 'The :attribute must be a valid URL.',
+=======
+    'timezone' => 'The :attribute must be a valid zone.',
+    'unique' => 'The :attribute has already been taken.',
+    'uploaded' => 'The :attribute failed to upload.',
+    'url' => 'The :attribute format is invalid.',
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
     'uuid' => 'The :attribute must be a valid UUID.',
 
     /*

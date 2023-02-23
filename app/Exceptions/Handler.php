@@ -10,7 +10,11 @@ class Handler extends ExceptionHandler
     /**
      * A list of the exception types that are not reported.
      *
+<<<<<<< HEAD
      * @var array<int, class-string<Throwable>>
+=======
+     * @var array
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
      */
     protected $dontReport = [
         //
@@ -19,7 +23,11 @@ class Handler extends ExceptionHandler
     /**
      * A list of the inputs that are never flashed for validation exceptions.
      *
+<<<<<<< HEAD
      * @var array<int, string>
+=======
+     * @var array
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
      */
     protected $dontFlash = [
         'current_password',
@@ -38,4 +46,16 @@ class Handler extends ExceptionHandler
             //
         });
     }
+<<<<<<< HEAD
+=======
+
+    public function report(Throwable $exception)
+    {
+        if (app()->bound('sentry') && $this->shouldReport($exception)) {
+            app('sentry')->captureException($exception);
+        }
+
+        parent::report($exception);
+    }
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
 }

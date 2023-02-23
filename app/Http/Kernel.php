@@ -11,22 +11,40 @@ class Kernel extends HttpKernel
      *
      * These middleware are run during every request to your application.
      *
+<<<<<<< HEAD
      * @var array<int, class-string|string>
+=======
+     * @var array
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
      */
     protected $middleware = [
         // \App\Http\Middleware\TrustHosts::class,
         \App\Http\Middleware\TrustProxies::class,
+<<<<<<< HEAD
         \Fruitcake\Cors\HandleCors::class,
+=======
+        \Illuminate\Http\Middleware\HandleCors::class,
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
         \App\Http\Middleware\PreventRequestsDuringMaintenance::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+<<<<<<< HEAD
+=======
+        \RenatoMarinho\LaravelPageSpeed\Middleware\ElideAttributes::class,
+        \RenatoMarinho\LaravelPageSpeed\Middleware\InsertDNSPrefetch::class,
+        \RenatoMarinho\LaravelPageSpeed\Middleware\CollapseWhitespace::class,
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
     ];
 
     /**
      * The application's route middleware groups.
      *
+<<<<<<< HEAD
      * @var array<string, array<int, class-string|string>>
+=======
+     * @var array
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
      */
     protected $middlewareGroups = [
         'web' => [
@@ -40,7 +58,10 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
+<<<<<<< HEAD
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+=======
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
@@ -51,7 +72,11 @@ class Kernel extends HttpKernel
      *
      * These middleware may be assigned to groups or used individually.
      *
+<<<<<<< HEAD
      * @var array<string, class-string|string>
+=======
+     * @var array
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
      */
     protected $routeMiddleware = [
         'auth' => \App\Http\Middleware\Authenticate::class,

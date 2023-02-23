@@ -44,9 +44,15 @@ return [
     */
 
     'argon' => [
+<<<<<<< HEAD
         'memory' => 65536,
         'threads' => 1,
         'time' => 4,
+=======
+        'memory' => 1024,
+        'threads' => 2,
+        'time' => 2,
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
     ],
 
 ];

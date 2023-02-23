@@ -69,7 +69,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'timezone' => 'UTC',
+=======
+    'timezone' => 'Asia/Jakarta',
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
 
     /*
     |--------------------------------------------------------------------------
@@ -82,7 +86,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'locale' => 'en',
+=======
+    'locale' => 'id',
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
 
     /*
     |--------------------------------------------------------------------------
@@ -167,6 +175,15 @@ return [
         /*
          * Package Service Providers...
          */
+<<<<<<< HEAD
+=======
+        Milon\Barcode\BarcodeServiceProvider::class,
+        Laravolt\Indonesia\ServiceProvider::class,
+        Yajra\DataTables\DataTablesServiceProvider::class,
+        Yajra\DataTables\ButtonsServiceProvider::class,
+        Yajra\DataTables\FractalServiceProvider::class,
+        Yajra\DataTables\HtmlServiceProvider::class,
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
 
         /*
          * Application Service Providers...
@@ -176,6 +193,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< HEAD
+=======
+        App\Providers\FortifyServiceProvider::class,
+        App\Providers\JetstreamServiceProvider::class,
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
 
     ],
 
@@ -191,7 +213,13 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+<<<<<<< HEAD
         // ...
+=======
+        'DNS1D' => Milon\Barcode\Facades\DNS1DFacade::class,
+        'DNS2D' => Milon\Barcode\Facades\DNS2DFacade::class,
+        'Indonesia' => Laravolt\Indonesia\Facade::class,
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
     ])->toArray(),
 
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 window._ = require('lodash');
 
 /**
@@ -26,3 +27,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+=======
+// Bootstrap's JS'
+const bootstrap = require('bootstrap/dist/js/bootstrap.min.js');
+
+// Make bootstrap's js available via the window object
+// (Used in the tooltip example)
+window.bootstrap = bootstrap;
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349

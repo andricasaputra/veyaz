@@ -21,6 +21,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
     | Deprecations Log Channel
     |--------------------------------------------------------------------------
     |
@@ -34,6 +35,8 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+=======
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
     | Log Channels
     |--------------------------------------------------------------------------
     |
@@ -78,11 +81,18 @@ return [
         'papertrail' => [
             'driver' => 'monolog',
             'level' => env('LOG_LEVEL', 'debug'),
+<<<<<<< HEAD
             'handler' => env('LOG_PAPERTRAIL_HANDLER', SyslogUdpHandler::class),
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
                 'port' => env('PAPERTRAIL_PORT'),
                 'connectionString' => 'tls://'.env('PAPERTRAIL_URL').':'.env('PAPERTRAIL_PORT'),
+=======
+            'handler' => SyslogUdpHandler::class,
+            'handler_with' => [
+                'host' => env('PAPERTRAIL_URL'),
+                'port' => env('PAPERTRAIL_PORT'),
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
             ],
         ],
 

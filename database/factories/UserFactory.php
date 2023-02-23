@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -11,6 +12,24 @@ use Illuminate\Support\Str;
 class UserFactory extends Factory
 {
     /**
+=======
+use App\Models\Team;
+use App\Models\User;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+use Laravel\Jetstream\Features;
+
+class UserFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = User::class;
+
+    /**
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
      * Define the model's default state.
      *
      * @return array
@@ -39,4 +58,27 @@ class UserFactory extends Factory
             ];
         });
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Indicate that the user should have a personal team.
+     *
+     * @return $this
+     */
+    public function withPersonalTeam()
+    {
+        if (! Features::hasTeamFeatures()) {
+            return $this->state([]);
+        }
+
+        return $this->has(
+            Team::factory()
+                ->state(function (array $attributes, User $user) {
+                    return ['name' => $user->name.'\'s Team', 'user_id' => $user->id, 'personal_team' => true];
+                }),
+            'ownedTeams'
+        );
+    }
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
 }

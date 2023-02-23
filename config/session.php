@@ -18,7 +18,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'driver' => env('SESSION_DRIVER', 'file'),
+=======
+    'driver' => env('SESSION_DRIVER', 'database'),
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
 
     /*
     |--------------------------------------------------------------------------
@@ -72,7 +76,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'connection' => env('SESSION_CONNECTION'),
+=======
+    'connection' => env('SESSION_CONNECTION', null),
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
 
     /*
     |--------------------------------------------------------------------------
@@ -100,7 +108,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'store' => env('SESSION_STORE'),
+=======
+    'store' => env('SESSION_STORE', null),
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
 
     /*
     |--------------------------------------------------------------------------
@@ -155,7 +167,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'domain' => env('SESSION_DOMAIN'),
+=======
+    'domain' => env('SESSION_DOMAIN', null),
+>>>>>>> 02b12afbcfc48a7aa01129d319afbe25f6726349
 
     /*
     |--------------------------------------------------------------------------
